@@ -7,5 +7,4 @@ variable "aws_region" {
 variable "website_bucket_name" {
   description = "Globally unique S3 bucket name for the website."
   type        = string
-  default     = "demi-terra-site"
 }
