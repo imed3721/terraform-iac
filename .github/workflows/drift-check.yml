@@ -1,0 +1,50 @@
+name: Terraform Drift Check
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  drift-check:
+    name: Check for Terraform Drift
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: "1.14.4"
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v6.3.0
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-west-2
+
+      - name: Terraform Init
+        run: terraform init
+        env:
+          TF_VAR_website_bucket_name: ${{ secrets.WEBSITE_BUCKET_NAME }}
+
+      - name: Check for Drift
+        run: |
+          set +e
+          terraform plan -input=false -detailed-exitcode -no-color
+          result=$?
+
+          if [ "$result" -eq 0 ]; then
+            echo "No drift detected."
+          elif [ "$result" -eq 2 ]; then
+            echo "Drift detected: Terraform found changes to review."
+          else
+            echo "Terraform plan failed."
+            exit "$result"
+          fi
+        env:
+          TF_VAR_website_bucket_name: ${{ secrets.WEBSITE_BUCKET_NAME }}
