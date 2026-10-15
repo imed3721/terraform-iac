@@ -143,6 +143,18 @@ This allowed me to practise a version-controlled development workflow and unders
 - Automated validation before deployment
 - Version-controlled infrastructure changes
 
+![Image Alt](https://github.com/imed3721/terraform-iac/blob/2d9f1c3221cd5c2e6949b66428c52d92a78597b5/screenshots/Screenshot%202026-10-15%20at%2013.48.17.png)
+
+![Image Alt](https://github.com/imed3721/terraform-iac/blob/2d9f1c3221cd5c2e6949b66428c52d92a78597b5/screenshots/Screenshot%202026-10-15%20at%2013.48.56.png)
+
+![Image Alt](https://github.com/imed3721/terraform-iac/blob/2d9f1c3221cd5c2e6949b66428c52d92a78597b5/screenshots/Screenshot%202026-10-15%20at%2013.49.44.png)
+
+![Image Alt](https://github.com/imed3721/terraform-iac/blob/2d9f1c3221cd5c2e6949b66428c52d92a78597b5/screenshots/Screenshot%202026-10-15%20at%2013.50.22.png)
+
+![Image Alt](https://github.com/imed3721/terraform-iac/blob/2d9f1c3221cd5c2e6949b66428c52d92a78597b5/screenshots/Screenshot%202026-10-15%20at%2013.50.27.png)
+
+![Image Alt](https://github.com/imed3721/terraform-iac/blob/2d9f1c3221cd5c2e6949b66428c52d92a78597b5/screenshots/Screenshot%202026-10-15%20at%2013.50.34.png)
+
 
 ### 2. CI/CD Deployment Test
 
