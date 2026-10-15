@@ -169,6 +169,14 @@ After merging the change into `main`, I used GitHub Actions to test the automate
 - Terraform plan and apply
 - Automated website updates through a CI/CD workflow
 
+![Image Alt](https://github.com/imed3721/terraform-iac/blob/92caf70cf5b76f26b4d14c3d6d14adae2e20051a/screenshots/Screenshot%202026-10-15%20at%2013.58.23.png)
+
+![Image Alt](https://github.com/imed3721/terraform-iac/blob/92caf70cf5b76f26b4d14c3d6d14adae2e20051a/screenshots/Screenshot%202026-10-15%20at%2013.58.30.png)
+
+![Image Alt](https://github.com/imed3721/terraform-iac/blob/92caf70cf5b76f26b4d14c3d6d14adae2e20051a/screenshots/Screenshot%202026-10-15%20at%2013.58.38.png)
+
+![Image Alt](https://github.com/imed3721/terraform-iac/blob/92caf70cf5b76f26b4d14c3d6d14adae2e20051a/screenshots/Screenshot%202026-10-15%20at%2013.58.42.png)
+
 ### 3. Terraform Drift Testing
 
 Tested infrastructure drift by manually changing the S3 static website's error document configuration in the AWS Console, independently of Terraform.
@@ -182,6 +190,30 @@ The intended validation is to run a Terraform plan through GitHub Actions and ch
 - The importance of maintaining consistency between AWS resources and Terraform configuration
 
 The drift test should be considered successful once the Terraform plan has confirmed and displayed the manually introduced change.
+
+![Image Alt](https://github.com/imed3721/terraform-iac/blob/19c3e86c608c2decb6e4dfdee3f86063dfc4588e/screenshots/Screenshot%202026-10-15%20at%2014.02.34.png)
+
+![Image Alt](https://github.com/imed3721/terraform-iac/blob/19c3e86c608c2decb6e4dfdee3f86063dfc4588e/screenshots/Screenshot%202026-10-15%20at%2014.02.40.png)
+
+![Image Alt](https://github.com/imed3721/terraform-iac/blob/19c3e86c608c2decb6e4dfdee3f86063dfc4588e/screenshots/Screenshot%202026-10-15%20at%2014.02.45.png)
+
+![Image Alt](https://github.com/imed3721/terraform-iac/blob/19c3e86c608c2decb6e4dfdee3f86063dfc4588e/screenshots/Screenshot%202026-10-15%20at%2014.02.51.png)
+
+![Image Alt](https://github.com/imed3721/terraform-iac/blob/19c3e86c608c2decb6e4dfdee3f86063dfc4588e/screenshots/Screenshot%202026-10-15%20at%2014.02.56.png)
+
+![Image Alt](https://github.com/imed3721/terraform-iac/blob/19c3e86c608c2decb6e4dfdee3f86063dfc4588e/screenshots/Screenshot%202026-10-15%20at%2014.03.02.png)
+
+![Image Alt](https://github.com/imed3721/terraform-iac/blob/19c3e86c608c2decb6e4dfdee3f86063dfc4588e/screenshots/Screenshot%202026-10-15%20at%2014.03.07.png)
+
+![Image Alt](https://github.com/imed3721/terraform-iac/blob/19c3e86c608c2decb6e4dfdee3f86063dfc4588e/screenshots/Screenshot%202026-10-15%20at%2014.03.11.png)
+
+![Image Alt](https://github.com/imed3721/terraform-iac/blob/19c3e86c608c2decb6e4dfdee3f86063dfc4588e/screenshots/Screenshot%202026-10-15%20at%2014.03.25.png)
+
+![Image Alt](https://github.com/imed3721/terraform-iac/blob/19c3e86c608c2decb6e4dfdee3f86063dfc4588e/screenshots/Screenshot%202026-10-15%20at%2014.03.29.png)
+
+![Image Alt](https://github.com/imed3721/terraform-iac/blob/19c3e86c608c2decb6e4dfdee3f86063dfc4588e/screenshots/Screenshot%202026-10-15%20at%2014.03.33.png)
+
+![Image Alt](https://github.com/imed3721/terraform-iac/blob/19c3e86c608c2decb6e4dfdee3f86063dfc4588e/screenshots/Screenshot%202026-10-15%20at%2014.03.36.png)
 
 ## AWS Authentication and Configuration
 
